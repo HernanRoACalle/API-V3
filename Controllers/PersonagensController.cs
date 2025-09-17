@@ -63,7 +63,7 @@ namespace RpgApi.Controllers
                 return BadRequest(ex.Message);
             }
         }   
-        [HttpPost]
+        [HttpPut]
         public async Task<IActionResult> Update(Personagem novoPersonagem){
             try{
                 if(novoPersonagem.PontosVida > 100){
